@@ -1,3 +1,17 @@
 <resources>
-    <string name="app_name">SizeBook</string>
+    <string name="app_name">blu1-SizeBook</string>
+    <string name="Create">Create New</string>
+    <string name="Delete">Delete</string>
+    <string name="Update">Update</string>
+    <string name="Name"><font size="15">Full Name</font></string>
+    <string name="Date"><font size="15">Date (yyyy-mm-dd)</font></string>
+    <string name="Neck"><font size="15">Neck (inches)</font></string>
+    <string name="Chest"><font size="15">Chest (inches)</font></string>
+    <string name="Bust"><font size="15">Bust (inches)</font></string>
+    <string name="Waist"><font size="15">Waist (inches)</font></string>
+    <string name="Hip"><font size="15">Hip (inches)</font></string>
+    <string name="Inseam"><font size="15">Inseam (inches)</font></string>
+    <string name="Comment"><font size="15">Comment</font></string>
+    <string name="oldRecords"><font size="15">My Records:</font></string>
+
 </resources>

@@ -3,4 +3,10 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+
+    //reference: http://stackoverflow.com/questions/4247385/how-to-change-color-of-listview-items-on-focus-and-on-click
+    <color name="black_dark">#ff000000</color>
+    <color name="colour_highlight_grey">#ffcccccc</color>
+
 </resources>

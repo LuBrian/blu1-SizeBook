@@ -69,8 +69,13 @@ public class Record {
         return this.comment;
     }
 
-    public String stringDate(){
-        return date +";";}
+    public String stringDate() {
+        if (!date.equals("")) {
+            return date + ";";
+        } else {
+            return date;
+        }
+    }
     public String stringName(){ return name;}
     public String stringNeck() {
         if (neck >= 0.0) {

@@ -3,6 +3,7 @@
     <string name="Create">Create New</string>
     <string name="Delete">Delete</string>
     <string name="Update">Update</string>
+    <string name="appTitle">blu1-SizeBook</string>
     <string name="Name"><font size="15">Full Name</font></string>
     <string name="Date"><font size="15">Date (yyyy-mm-dd)</font></string>
     <string name="Neck"><font size="15">Neck (inches)</font></string>

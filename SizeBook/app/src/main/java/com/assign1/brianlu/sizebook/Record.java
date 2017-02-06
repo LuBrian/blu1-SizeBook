@@ -69,57 +69,57 @@ public class Record {
         return this.comment;
     }
 
-    public String stringDate() {
+    private String stringDate() {
         if (!date.equals("")) {
             return date + ";";
         } else {
             return date;
         }
     }
-    public String stringName(){ return name;}
-    public String stringNeck() {
+    private String stringName(){ return name;}
+    private String stringNeck() {
         if (neck >= 0.0) {
             return " Neck->" + String.format("%.1f", neck)+" inches;";
         } else{
             return "";
         }
     }
-    public String stringBust(){
+    private String stringBust(){
         if (bust >= 0.0) {
             return " Bust->" + String.format("%.1f", bust) +" inches;";
         } else{
             return "";
         }
     }
-    public String stringChest(){
+    private String stringChest(){
         if (chest >= 0.0) {
             return " Chest->" + String.format("%.1f", chest) +" inches;";
         } else{
             return "";
         }
     }
-    public String stringWaist(){
+    private String stringWaist(){
         if (waist >= 0.0) {
             return " Waist->" + String.format("%.1f", waist) +" inches;";
         } else{
             return "";
         }
     }
-    public String stringHip(){
+    private String stringHip(){
         if (hip >= 0.0) {
             return " Hip->" + String.format("%.1f", hip) +" inches;";
         } else{
             return "";
         }
     }
-    public String stringInseam(){
+    private String stringInseam(){
         if (inseam >= 0.0) {
             return " Inseam->" + String.format("%.1f", inseam) +" inches;";
         } else{
             return "";
         }
     }
-    public String stringComment(){ return comment;}
+    private String stringComment(){ return comment;}
 
 
     public void setDate(String date){

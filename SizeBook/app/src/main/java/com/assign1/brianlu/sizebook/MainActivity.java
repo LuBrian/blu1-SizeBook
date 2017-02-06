@@ -121,7 +121,9 @@ public class MainActivity extends ListActivity {
 
             }
         });
-
+        /**
+         * @
+         */
         deleteButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){

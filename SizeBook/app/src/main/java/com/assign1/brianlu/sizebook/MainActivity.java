@@ -101,6 +101,13 @@ public class MainActivity extends ListActivity {
                     if(!date.equals("")) {
                        if(!date.matches("\\d{4}-\\d{2}-\\d{2}")) {
                            Toast.makeText(getBaseContext(), "Please enter a valid date! ", Toast.LENGTH_SHORT).show();
+                       }else{
+                           Record newRecord = new Record(name, date, neck, bust, chest, waist, hip, inseam, comment);
+                           recordList.add(newRecord);
+                           adapter.notifyDataSetChanged();
+                           saveInFile();
+                           recordsCount.setText(String.valueOf(oldRecords.getAdapter().getCount()));
+                           emptyInput();
                        }
                     } else{
                         Record newRecord = new Record(name, date, neck, bust, chest, waist, hip, inseam, comment);
@@ -181,6 +188,26 @@ public class MainActivity extends ListActivity {
                             if(!dateText.getText().toString().equals("")){
                                     if(!dateText.getText().toString().matches("\\d{4}-\\d{2}-\\d{2}")) {
                                         Toast.makeText(getBaseContext(), "Please enter a valid date! ", Toast.LENGTH_SHORT).show();
+                                    }else{
+                                        try {
+                                            recordList.get(i).setName( nameText.getText().toString());
+
+                                            recordList.get(i).setComment( commentText.getText().toString());
+                                            recordList.get(i).setDate( dateText.getText().toString());
+                                            recordList.get(i).setNeck( checkInputDouble(neckText.getText().toString()));
+                                            recordList.get(i).setBust( checkInputDouble(bustText.getText().toString()));
+                                            recordList.get(i).setChest( checkInputDouble(chestText.getText().toString()));
+                                            recordList.get(i).setWaist( checkInputDouble(waistText.getText().toString()));
+                                            recordList.get(i).setHip( checkInputDouble(hipText.getText().toString()));
+                                            recordList.get(i).setInseam( checkInputDouble(inseamText.getText().toString()));
+                                            checkedItemPositions.clear();
+                                            adapter.notifyDataSetChanged();
+                                            saveInFile();
+                                            recordsCount.setText(String.valueOf(oldRecords.getAdapter().getCount()));
+                                            emptyInput();
+                                        } catch (StringTooLongException | NoNegativeValueException e) {
+                                            e.printStackTrace();
+                                        }
                                     }
                             }else{
                                 try {
